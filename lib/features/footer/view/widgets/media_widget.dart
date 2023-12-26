@@ -1,6 +1,8 @@
 import 'package:elif_site/features/footer/view/theme/footer_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+// import 'package:flutter_svg/flutter_svg.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 Widget mediaCol() {
   return SizedBox(
@@ -25,19 +27,31 @@ Widget mediaCol() {
               SizedBox(
                 width: 10.w,
               ),
-              Icon(Icons.facebook, color: Colors.white),
+              IconButton(
+                onPressed: () {},
+                icon: FaIcon(FontAwesomeIcons.instagram, color: Colors.white),
+              ),
               SizedBox(
                 width: 10.w,
               ),
-              Icon(Icons.facebook, color: Colors.white),
+              IconButton(
+                onPressed: () {},
+                icon: FaIcon(FontAwesomeIcons.linkedin, color: Colors.white),
+              ),
               SizedBox(
                 width: 10.w,
               ),
-              Icon(Icons.facebook, color: Colors.white),
+              IconButton(
+                onPressed: () {},
+                icon: FaIcon(FontAwesomeIcons.telegram, color: Colors.white),
+              ),
               SizedBox(
                 width: 10.w,
               ),
-              Icon(Icons.facebook, color: Colors.white)
+              IconButton(
+                onPressed: () {},
+                icon: FaIcon(FontAwesomeIcons.whatsapp, color: Colors.white),
+              ),
             ],
           ),
         )
@@ -45,4 +59,3 @@ Widget mediaCol() {
     ),
   );
 }
-

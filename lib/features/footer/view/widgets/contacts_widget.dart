@@ -4,7 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 Widget contactsCol() {
   return SizedBox(
-    height: 120,
+    height: 130,
     child: Column(
       children: [
         Text(

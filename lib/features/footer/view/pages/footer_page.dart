@@ -1,5 +1,4 @@
 import 'package:elif_site/features/footer/view/theme/footer_colors.dart';
-import 'package:elif_site/features/footer/view/theme/footer_fonts.dart';
 import 'package:elif_site/features/footer/view/widgets/address_widget.dart';
 import 'package:elif_site/features/footer/view/widgets/contacts_widget.dart';
 import 'package:elif_site/features/footer/view/widgets/media_widget.dart';

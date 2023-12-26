@@ -1,4 +1,5 @@
 import 'package:elif_site/features/footer/view/theme/footer_colors.dart';
+import 'package:elif_site/features/footer/view/theme/footer_fonts.dart';
 import 'package:elif_site/features/footer/view/widgets/address_widget.dart';
 import 'package:elif_site/features/footer/view/widgets/contacts_widget.dart';
 import 'package:elif_site/features/footer/view/widgets/media_widget.dart';
@@ -32,7 +33,11 @@ class _FooterScreenState extends State<FooterScreen> {
                   width: 1600.w,
                   height: 1,
                   decoration: const BoxDecoration(color: Colors.white),
-                )
+                ),
+                SizedBox(
+                  height: 36,
+                ),
+                Text("2023 Все права защищены", style: FooterFonts.s20w400.copyWith(color: Colors.white),)
               ],
             ),
           ),
@@ -79,12 +84,12 @@ Widget _secondRowPart() {
           vertical: 55,
         ),
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             contactsCol(),
             SizedBox(
-              width: 41.w,
+              width: 105.w,
             ),
             mediaCol(),
             SizedBox(

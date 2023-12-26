@@ -5,7 +5,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 Widget contactsCol() {
   return SizedBox(
     height: 130,
+    width: 200,
     child: Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
           "Контакты",

@@ -21,25 +21,28 @@ class _FooterScreenState extends State<FooterScreen> {
     return Scaffold(
       body: Container(
         width: double.infinity,
-        height: 801,
+        height: 810,
         decoration: BoxDecoration(color: FooterColors.footerBg),
-        child: Center(
-          child: Padding(
-            padding: EdgeInsets.symmetric(vertical: 36),
-            child: Column(
-              children: [
-                _logoAndInfoRow(),
-                Container(
-                  width: 1600.w,
-                  height: 1,
-                  decoration: const BoxDecoration(color: Colors.white),
+        child: Padding(
+          padding: EdgeInsets.symmetric(vertical: 36),
+          child: Column(
+            children: [
+              _logoAndInfoRow(),
+              Container(
+                width: 1600.w,
+                height: 1,
+                decoration: const BoxDecoration(color: Colors.white),
+              ),
+              SizedBox(
+                height: 36,
+              ),
+              Expanded(
+                child: Text(
+                  "2023 Все права защищены",
+                  style: FooterFonts.s20w400.copyWith(color: Colors.white),
                 ),
-                SizedBox(
-                  height: 36,
-                ),
-                Text("2023 Все права защищены", style: FooterFonts.s20w400.copyWith(color: Colors.white),)
-              ],
-            ),
+              )
+            ],
           ),
         ),
       ),
